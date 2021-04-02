@@ -1,0 +1,18 @@
+// this json config file is json5 format which is competible with json format
+{
+    "router": {
+        "ip": "", // need to fill in
+        "username": "", // need to fill in
+        "password": "", // need to fill in
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36",
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+        }
+    },
+    "thingsboard": {
+        "host": "", // need to fill in
+        "port": 1883, // default port
+        "token": "" // need to fill in
+    },
+    "interval": 5
+}

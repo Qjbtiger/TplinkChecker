@@ -1,0 +1,634 @@
+{
+    "title": "Router",
+    "configuration": {
+        "description": "Router DashBoard",
+        "widgets": {
+            "5557383d-33bd-c616-d00a-c026ca91f162": {
+                "isSystemType": true,
+                "bundleAlias": "charts",
+                "typeAlias": "basic_timeseries",
+                "type": "timeseries",
+                "title": "Timeseries - Chart.js",
+                "sizeX": 8,
+                "sizeY": 5,
+                "row": 0,
+                "col": 0,
+                "config": {
+                    "datasources": [{
+                        "type": "entity",
+                        "dataKeys": [{
+                            "name": "tx",
+                            "label": "Tx, KB/s",
+                            "type": "timeseries",
+                            "color": "#2196f3",
+                            "settings": {
+                                "showLines": true,
+                                "fillLines": false,
+                                "showPoints": false
+                            },
+                            "_hash": 0.7438679421517123
+                        }],
+                        "name": "Arduino Uno Demo Device",
+                        "entityAliasId": "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5"
+                    }],
+                    "timewindow": {
+                        "realtime": {
+                            "timewindowMs": 120000
+                        }
+                    },
+                    "showTitle": true,
+                    "backgroundColor": "#fff",
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "padding": "8px",
+                    "settings": {},
+                    "title": "Tx"
+                },
+                "id": "5557383d-33bd-c616-d00a-c026ca91f162"
+            },
+            "d2410dd9-2f24-179a-36bf-1fcf4c5ae9b3": {
+                "isSystemType": true,
+                "bundleAlias": "digital_gauges",
+                "typeAlias": "digital_thermometer",
+                "type": "latest",
+                "title": "Digital thermometer",
+                "sizeX": 4,
+                "sizeY": 5,
+                "row": 0,
+                "col": 8,
+                "config": {
+                    "datasources": [{
+                        "type": "entity",
+                        "dataKeys": [{
+                            "name": "tx",
+                            "type": "timeseries",
+                            "label": "tx",
+                            "color": "#2196f3",
+                            "settings": {},
+                            "_hash": 0.12513745304517898
+                        }],
+                        "name": "Arduino Uno Demo Device",
+                        "entityAliasId": "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5"
+                    }],
+                    "timewindow": {
+                        "realtime": {
+                            "timewindowMs": 60000
+                        }
+                    },
+                    "showTitle": false,
+                    "backgroundColor": "#000000",
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "padding": "0px",
+                    "settings": {
+                        "maxValue": 10240,
+                        "donutStartAngle": 90,
+                        "showValue": true,
+                        "showMinMax": true,
+                        "gaugeWidthScale": 0.75,
+                        "levelColors": [
+                            "#304ffe",
+                            "#7e57c2",
+                            "#ff4081",
+                            "#d32f2f"
+                        ],
+                        "refreshAnimationType": "<>",
+                        "refreshAnimationTime": 700,
+                        "startAnimationType": "<>",
+                        "startAnimationTime": 700,
+                        "titleFont": {
+                            "family": "RobotoDraft",
+                            "size": 12,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "labelFont": {
+                            "family": "RobotoDraft",
+                            "size": 8,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "valueFont": {
+                            "family": "Segment7Standard",
+                            "style": "normal",
+                            "weight": "500",
+                            "size": 14
+                        },
+                        "minMaxFont": {
+                            "family": "Segment7Standard",
+                            "size": 8,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "dashThickness": 0.85,
+                        "decimals": 0,
+                        "gaugeColor": "#333333",
+                        "neonGlowBrightness": 35,
+                        "gaugeType": "verticalBar",
+                        "minValue": 0,
+                        "showUnitTitle": true,
+                        "unitTitle": "Tx KB/s"
+                    },
+                    "title": "Digital thermometer"
+                },
+                "id": "d2410dd9-2f24-179a-36bf-1fcf4c5ae9b3"
+            },
+            "16434cd6-eb97-ba06-4b80-b2f1bc56a652": {
+                "isSystemType": true,
+                "bundleAlias": "charts",
+                "typeAlias": "basic_timeseries",
+                "type": "timeseries",
+                "title": "Timeseries - Chart.js",
+                "sizeX": 8,
+                "sizeY": 5,
+                "row": 5,
+                "col": 0,
+                "config": {
+                    "datasources": [{
+                        "type": "entity",
+                        "dataKeys": [{
+                            "name": "rx",
+                            "label": "Rx, KB/s",
+                            "type": "timeseries",
+                            "color": "#2196f3",
+                            "settings": {
+                                "showLines": true,
+                                "fillLines": false,
+                                "showPoints": false
+                            },
+                            "_hash": 0.37845111848900936
+                        }],
+                        "name": "Arduino Uno Demo Device",
+                        "entityAliasId": "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5"
+                    }],
+                    "timewindow": {
+                        "realtime": {
+                            "timewindowMs": 120000
+                        }
+                    },
+                    "showTitle": true,
+                    "backgroundColor": "#fff",
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "padding": "8px",
+                    "settings": {},
+                    "title": "Rx"
+                },
+                "id": "16434cd6-eb97-ba06-4b80-b2f1bc56a652"
+            },
+            "5a6bdae0-a21b-9747-ef2f-ebdfcb016333": {
+                "isSystemType": true,
+                "bundleAlias": "digital_gauges",
+                "typeAlias": "digital_vertical_bar",
+                "type": "latest",
+                "title": "Digital vertical bar",
+                "sizeX": 4,
+                "sizeY": 5,
+                "row": 5,
+                "col": 8,
+                "config": {
+                    "datasources": [{
+                        "type": "entity",
+                        "dataKeys": [{
+                            "name": "rx",
+                            "label": "rx",
+                            "type": "timeseries",
+                            "color": "#2196f3",
+                            "settings": {},
+                            "_hash": 0.3269453210790785
+                        }],
+                        "name": "Arduino Uno Demo Device",
+                        "entityAliasId": "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5"
+                    }],
+                    "timewindow": {
+                        "realtime": {
+                            "timewindowMs": 60000
+                        }
+                    },
+                    "showTitle": false,
+                    "backgroundColor": "#000000",
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "padding": "0px",
+                    "settings": {
+                        "maxValue": 10240,
+                        "donutStartAngle": 90,
+                        "showValue": true,
+                        "showMinMax": true,
+                        "gaugeWidthScale": 0.75,
+                        "levelColors": [
+                            "#3d5afe",
+                            "#0288d1"
+                        ],
+                        "refreshAnimationType": "<>",
+                        "refreshAnimationTime": 700,
+                        "startAnimationType": "<>",
+                        "startAnimationTime": 700,
+                        "titleFont": {
+                            "family": "RobotoDraft",
+                            "size": 12,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "labelFont": {
+                            "family": "RobotoDraft",
+                            "size": 8,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "valueFont": {
+                            "family": "Segment7Standard",
+                            "style": "normal",
+                            "weight": "500",
+                            "size": 14
+                        },
+                        "minMaxFont": {
+                            "family": "Segment7Standard",
+                            "size": 8,
+                            "style": "normal",
+                            "weight": "normal"
+                        },
+                        "neonGlowBrightness": 20,
+                        "decimals": 0,
+                        "showUnitTitle": true,
+                        "gaugeColor": "#151c3d",
+                        "gaugeType": "verticalBar",
+                        "showTitle": false,
+                        "minValue": 0,
+                        "dashThickness": 0.85,
+                        "unitTitle": "Rx KB/s"
+                    },
+                    "title": "Digital vertical bar"
+                },
+                "id": "5a6bdae0-a21b-9747-ef2f-ebdfcb016333"
+            },
+            "5557383d-33bd-c616-d00a-c026ca91f168": {
+                "isSystemType": true,
+                "bundleAlias": "charts",
+                "typeAlias": "basic_timeseries",
+                "type": "timeseries",
+                "title": "Timeseries - Chart.js",
+                "sizeX": 8,
+                "sizeY": 5,
+                "row": 0,
+                "col": 0,
+                "config": {
+                    "datasources": [{
+                        "type": "entity",
+                        "dataKeys": [{
+                            "name": "cpu",
+                            "label": "CPU, %",
+                            "type": "timeseries",
+                            "color": "#2196f3",
+                            "settings": {
+                                "showLines": true,
+                                "fillLines": false,
+                                "showPoints": false
+                            },
+                            "_hash": 0.7438679421517123
+                        }],
+                        "name": "Arduino Uno Demo Device",
+                        "entityAliasId": "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5"
+                    }],
+                    "timewindow": {
+                        "realtime": {
+                            "timewindowMs": 120000
+                        }
+                    },
+                    "showTitle": true,
+                    "backgroundColor": "#fff",
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "padding": "8px",
+                    "settings": {},
+                    "title": "CPU Usage"
+                },
+                "id": "5557383d-33bd-c616-d00a-c026ca91f168"
+            },
+            "d2410dd9-2f24-179a-36bf-1fcf4c5ae9b8": {
+                "isSystemType": true,
+                "bundleAlias": "digital_gauges",
+                "typeAlias": "digital_thermometer",
+                "type": "latest",
+                "title": "Digital thermometer",
+                "sizeX": 4,
+                "sizeY": 5,
+                "row": 0,
+                "col": 8,
+                "config": {
+                    "datasources": [{
+                        "type": "entity",
+                        "dataKeys": [{
+                            "name": "cpu",
+                            "type": "timeseries",
+                            "label": "CPU",
+                            "color": "#2196f3",
+                            "settings": {},
+                            "_hash": 0.12513745304517898
+                        }],
+                        "name": "Arduino Uno Demo Device",
+                        "entityAliasId": "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5"
+                    }],
+                    "timewindow": {
+                        "realtime": {
+                            "timewindowMs": 60000
+                        }
+                    },
+                    "showTitle": false,
+                    "backgroundColor": "#000000",
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "padding": "0px",
+                    "settings": {
+                        "maxValue": 100,
+                        "donutStartAngle": 90,
+                        "showValue": true,
+                        "showMinMax": true,
+                        "gaugeWidthScale": 0.75,
+                        "levelColors": [
+                            "#304ffe",
+                            "#7e57c2",
+                            "#ff4081",
+                            "#d32f2f"
+                        ],
+                        "refreshAnimationType": "<>",
+                        "refreshAnimationTime": 700,
+                        "startAnimationType": "<>",
+                        "startAnimationTime": 700,
+                        "titleFont": {
+                            "family": "RobotoDraft",
+                            "size": 12,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "labelFont": {
+                            "family": "RobotoDraft",
+                            "size": 8,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "valueFont": {
+                            "family": "Segment7Standard",
+                            "style": "normal",
+                            "weight": "500",
+                            "size": 14
+                        },
+                        "minMaxFont": {
+                            "family": "Segment7Standard",
+                            "size": 8,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "dashThickness": 0.85,
+                        "decimals": 0,
+                        "gaugeColor": "#333333",
+                        "neonGlowBrightness": 35,
+                        "gaugeType": "verticalBar",
+                        "minValue": 0,
+                        "showUnitTitle": true,
+                        "unitTitle": "CPU %"
+                    },
+                    "title": "Digital thermometer"
+                },
+                "id": "d2410dd9-2f24-179a-36bf-1fcf4c5ae9b8"
+            },
+            "16434cd6-eb97-ba06-4b80-b2f1bc56a658": {
+                "isSystemType": true,
+                "bundleAlias": "charts",
+                "typeAlias": "basic_timeseries",
+                "type": "timeseries",
+                "title": "Timeseries - Chart.js",
+                "sizeX": 8,
+                "sizeY": 5,
+                "row": 5,
+                "col": 0,
+                "config": {
+                    "datasources": [{
+                        "type": "entity",
+                        "dataKeys": [{
+                            "name": "mem",
+                            "label": "MEM, %",
+                            "type": "timeseries",
+                            "color": "#2196f3",
+                            "settings": {
+                                "showLines": true,
+                                "fillLines": false,
+                                "showPoints": false
+                            },
+                            "_hash": 0.37845111848900936
+                        }],
+                        "name": "Arduino Uno Demo Device",
+                        "entityAliasId": "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5"
+                    }],
+                    "timewindow": {
+                        "realtime": {
+                            "timewindowMs": 120000
+                        }
+                    },
+                    "showTitle": true,
+                    "backgroundColor": "#fff",
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "padding": "8px",
+                    "settings": {},
+                    "title": "MEM Usage"
+                },
+                "id": "16434cd6-eb97-ba06-4b80-b2f1bc56a658"
+            },
+            "5a6bdae0-a21b-9747-ef2f-ebdfcb016338": {
+                "isSystemType": true,
+                "bundleAlias": "digital_gauges",
+                "typeAlias": "digital_vertical_bar",
+                "type": "latest",
+                "title": "Digital vertical bar",
+                "sizeX": 4,
+                "sizeY": 5,
+                "row": 5,
+                "col": 8,
+                "config": {
+                    "datasources": [{
+                        "type": "entity",
+                        "dataKeys": [{
+                            "name": "mem",
+                            "label": "MEM",
+                            "type": "timeseries",
+                            "color": "#2196f3",
+                            "settings": {},
+                            "_hash": 0.3269453210790785
+                        }],
+                        "name": "Arduino Uno Demo Device",
+                        "entityAliasId": "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5"
+                    }],
+                    "timewindow": {
+                        "realtime": {
+                            "timewindowMs": 60000
+                        }
+                    },
+                    "showTitle": false,
+                    "backgroundColor": "#000000",
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "padding": "0px",
+                    "settings": {
+                        "maxValue": 100,
+                        "donutStartAngle": 90,
+                        "showValue": true,
+                        "showMinMax": true,
+                        "gaugeWidthScale": 0.75,
+                        "levelColors": [
+                            "#3d5afe",
+                            "#0288d1"
+                        ],
+                        "refreshAnimationType": "<>",
+                        "refreshAnimationTime": 700,
+                        "startAnimationType": "<>",
+                        "startAnimationTime": 700,
+                        "titleFont": {
+                            "family": "RobotoDraft",
+                            "size": 12,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "labelFont": {
+                            "family": "RobotoDraft",
+                            "size": 8,
+                            "style": "normal",
+                            "weight": "500"
+                        },
+                        "valueFont": {
+                            "family": "Segment7Standard",
+                            "style": "normal",
+                            "weight": "500",
+                            "size": 14
+                        },
+                        "minMaxFont": {
+                            "family": "Segment7Standard",
+                            "size": 8,
+                            "style": "normal",
+                            "weight": "normal"
+                        },
+                        "neonGlowBrightness": 20,
+                        "decimals": 0,
+                        "showUnitTitle": true,
+                        "gaugeColor": "#151c3d",
+                        "gaugeType": "verticalBar",
+                        "showTitle": false,
+                        "minValue": 0,
+                        "dashThickness": 0.85,
+                        "unitTitle": "MEM %"
+                    },
+                    "title": "Digital vertical bar"
+                },
+                "id": "5a6bdae0-a21b-9747-ef2f-ebdfcb016338"
+            }
+        },
+        "states": {
+            "default": {
+                "name": "Router",
+                "root": true,
+                "layouts": {
+                    "main": {
+                        "widgets": {
+                            "5557383d-33bd-c616-d00a-c026ca91f162": {
+                                "sizeX": 8,
+                                "sizeY": 5,
+                                "row": 0,
+                                "col": 0
+                            },
+                            "d2410dd9-2f24-179a-36bf-1fcf4c5ae9b3": {
+                                "sizeX": 4,
+                                "sizeY": 5,
+                                "row": 0,
+                                "col": 8
+                            },
+                            "16434cd6-eb97-ba06-4b80-b2f1bc56a652": {
+                                "sizeX": 8,
+                                "sizeY": 5,
+                                "row": 5,
+                                "col": 0
+                            },
+                            "5a6bdae0-a21b-9747-ef2f-ebdfcb016333": {
+                                "sizeX": 4,
+                                "sizeY": 5,
+                                "row": 5,
+                                "col": 8
+                            },
+                            "5557383d-33bd-c616-d00a-c026ca91f168": {
+                                "sizeX": 8,
+                                "sizeY": 5,
+                                "row": 10,
+                                "col": 0
+                            },
+                            "d2410dd9-2f24-179a-36bf-1fcf4c5ae9b8": {
+                                "sizeX": 4,
+                                "sizeY": 5,
+                                "row": 10,
+                                "col": 8
+                            },
+                            "16434cd6-eb97-ba06-4b80-b2f1bc56a658": {
+                                "sizeX": 8,
+                                "sizeY": 5,
+                                "row": 15,
+                                "col": 0
+                            },
+                            "5a6bdae0-a21b-9747-ef2f-ebdfcb016338": {
+                                "sizeX": 4,
+                                "sizeY": 5,
+                                "row": 15,
+                                "col": 8
+                            }
+                        },
+                        "gridSettings": {
+                            "backgroundColor": "#eeeeee",
+                            "color": "rgba(0,0,0,0.870588)",
+                            "columns": 24,
+                            "margin": 10,
+                            "backgroundSizeMode": "100%"
+                        }
+                    }
+                }
+            }
+        },
+        "entityAliases": {
+            "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5": {
+                "id": "6f0faa4b-7b89-cc22-9775-e2fbf2d697d5",
+                "alias": "Arduino UNO Demo Device",
+                "filter": {
+                    "type": "entityList",
+                    "entityType": "DEVICE",
+                    "resolveMultiple": false,
+                    "entityList": [
+                        "345ada90-92fe-11eb-a6f0-2360cb42ed01"
+                    ]
+                }
+            }
+        },
+        "filters": {},
+        "timewindow": {
+            "displayValue": "",
+            "hideInterval": false,
+            "hideAggregation": false,
+            "hideAggInterval": false,
+            "selectedTab": 0,
+            "realtime": {
+                "interval": 1000,
+                "timewindowMs": 60000
+            },
+            "history": {
+                "historyType": 0,
+                "interval": 1000,
+                "timewindowMs": 60000,
+                "fixedTimewindow": {
+                    "startTimeMs": 1598541110028,
+                    "endTimeMs": 1598627510028
+                }
+            },
+            "aggregation": {
+                "type": "AVG",
+                "limit": 25000
+            }
+        },
+        "settings": {
+            "stateControllerId": "entity",
+            "showTitle": false,
+            "showDashboardsSelect": true,
+            "showEntitiesSelect": true,
+            "showDashboardTimewindow": true,
+            "showDashboardExport": true,
+            "toolbarAlwaysOpen": true
+        }
+    },
+    "name": "Router"
+}
