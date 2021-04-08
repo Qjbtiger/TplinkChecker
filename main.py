@@ -48,7 +48,7 @@ if __name__=="__main__":
                     "tx": tx,
                     "rx": rx,
                     "cpu": cpu,
-                    "men": mem
+                    "mem": mem
                 }
                 mqttSender.send(message)
                 sleep = config['interval'] - (time.time() - read_time)
