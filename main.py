@@ -31,7 +31,13 @@ if __name__=="__main__":
             mqttSender.send(message)
             sleep = config['interval'] - (time.time() - read_time)
             time.sleep(sleep if sleep > 0 else 0)
-    except BaseException as e:
+    except KeyboardInterrupt:
+        checker.logout()
+        mqttSender.stop()
+        print('End!')
+        exit(1)
+    except Exception as e:
+        print(e)
         print(response)
         checker.logout()
         mqttSender.stop()
