@@ -20,7 +20,7 @@ if __name__=="__main__":
             rx = response['result'][1][0]['rx_bps']
             cpu = response['result'][2]['cpu']
             mem = response['result'][2]['mem']
-            print('tx: {} KB/s, rx: {} KB/s, cpu: {}%, mem: {}%'.format(tx, rx, cpu, mem))
+            print('tx: {} KB/s, rx: {} KB/s, cpu: {}%, mem: {}%, Time: {}'.format(tx, rx, cpu, mem, time.strftime('%H:%M:%S %Y-%m-%d', time.localtime())))
 
             message = {
                 "tx": tx,
@@ -31,7 +31,8 @@ if __name__=="__main__":
             mqttSender.send(message)
             sleep = config['interval'] - (time.time() - read_time)
             time.sleep(sleep if sleep > 0 else 0)
-    except KeyboardInterrupt as e:
+    except BaseException as e:
+        print(response)
         checker.logout()
         mqttSender.stop()
         print('End!')
