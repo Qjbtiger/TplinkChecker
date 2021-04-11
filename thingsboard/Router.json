@@ -18,7 +18,7 @@
                         "type": "entity",
                         "dataKeys": [{
                             "name": "tx",
-                            "label": "Tx, KB/s",
+                            "label": "Tx, MB/s",
                             "type": "timeseries",
                             "color": "#2196f3",
                             "settings": {
@@ -79,7 +79,7 @@
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
-                        "maxValue": 10240,
+                        "maxValue": 128,
                         "donutStartAngle": 90,
                         "showValue": true,
                         "showMinMax": true,
@@ -119,13 +119,13 @@
                             "weight": "500"
                         },
                         "dashThickness": 0.85,
-                        "decimals": 0,
+                        "decimals": 2,
                         "gaugeColor": "#333333",
                         "neonGlowBrightness": 35,
                         "gaugeType": "verticalBar",
                         "minValue": 0,
                         "showUnitTitle": true,
-                        "unitTitle": "Tx KB/s"
+                        "unitTitle": "Tx MB/s"
                     },
                     "title": "Digital thermometer"
                 },
@@ -146,7 +146,7 @@
                         "type": "entity",
                         "dataKeys": [{
                             "name": "rx",
-                            "label": "Rx, KB/s",
+                            "label": "Rx, MB/s",
                             "type": "timeseries",
                             "color": "#2196f3",
                             "settings": {
@@ -207,7 +207,7 @@
                     "color": "rgba(0, 0, 0, 0.87)",
                     "padding": "0px",
                     "settings": {
-                        "maxValue": 10240,
+                        "maxValue": 128,
                         "donutStartAngle": 90,
                         "showValue": true,
                         "showMinMax": true,
@@ -245,14 +245,14 @@
                             "weight": "normal"
                         },
                         "neonGlowBrightness": 20,
-                        "decimals": 0,
+                        "decimals": 2,
                         "showUnitTitle": true,
                         "gaugeColor": "#151c3d",
                         "gaugeType": "verticalBar",
                         "showTitle": false,
                         "minValue": 0,
                         "dashThickness": 0.85,
-                        "unitTitle": "Rx KB/s"
+                        "unitTitle": "Rx MB/s"
                     },
                     "title": "Digital vertical bar"
                 },
@@ -590,7 +590,7 @@
                     "entityType": "DEVICE",
                     "resolveMultiple": false,
                     "entityList": [
-                        "345ada90-92fe-11eb-a6f0-2360cb42ed01"
+                        "eed100f0-9aa8-11eb-9891-2f0a8881b660"
                     ]
                 }
             }

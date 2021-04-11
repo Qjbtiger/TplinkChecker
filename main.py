@@ -39,10 +39,12 @@ if __name__=="__main__":
                 read_time = time.time()
                 response = checker.get_system_state()
                 tx = response['result'][1][0]['tx_bps']
+                tx = round(tx / 1024, 2) # unit change to MB/s
                 rx = response['result'][1][0]['rx_bps']
+                rx = round(rx / 1024, 2)
                 cpu = response['result'][2]['cpu']
                 mem = response['result'][2]['mem']
-                print('tx: {} KB/s, rx: {} KB/s, cpu: {}%, mem: {}%, Time: {}'.format(tx, rx, cpu, mem, time.strftime('%H:%M:%S %Y-%m-%d', time.localtime())))
+                print('tx: {:2f} MB/s, rx: {:2f} MB/s, cpu: {}%, mem: {}%, Time: {}'.format(tx, rx, cpu, mem, time.strftime('%H:%M:%S %Y-%m-%d', time.localtime())))
 
                 message = {
                     "tx": tx,
