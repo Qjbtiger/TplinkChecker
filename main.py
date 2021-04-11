@@ -44,7 +44,7 @@ if __name__=="__main__":
                 rx = round(rx / 1024, 2)
                 cpu = response['result'][2]['cpu']
                 mem = response['result'][2]['mem']
-                print('tx: {:2f} MB/s, rx: {:2f} MB/s, cpu: {}%, mem: {}%, Time: {}'.format(tx, rx, cpu, mem, time.strftime('%H:%M:%S %Y-%m-%d', time.localtime())))
+                print('tx: {:.2f} MB/s, rx: {:.2f} MB/s, cpu: {}%, mem: {}%, Time: {}'.format(tx, rx, cpu, mem, time.strftime('%H:%M:%S %Y-%m-%d', time.localtime())))
 
                 message = {
                     "tx": tx,
