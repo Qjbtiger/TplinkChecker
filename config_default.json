@@ -14,5 +14,5 @@
         "port": 1883, // default port
         "token": "" // need to fill in
     },
-    "interval": 5
+    "interval": 10
 }

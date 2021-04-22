@@ -67,6 +67,21 @@ class Checker(object):
         response = self.session.post(url, data=encodeData(data), headers=headers)
         return json5.loads(response.text)
 
+    def get_ip_states(self):
+        if not self.isLogin:
+            print('You have not login yet!')
+            return
+
+        url = 'http://{}/cgi-bin/luci/;stok={}/admin/ipstats?form=list'.format(self.ip, self.stok)
+        headers = self.default_headers
+        headers['Referer'] = 'http://{}/webpages/index.html'.format(self.ip)
+        data = {
+            "method": "get",
+            "params": {}
+        }
+        response = self.session.post(url, data=encodeData(data), headers=headers)
+        return json5.loads(response.text)
+
     def logout(self):
         if not self.isLogin:
             print('You have not login yet!')
@@ -76,7 +91,7 @@ class Checker(object):
         headers = self.default_headers
         headers['Referer'] = 'http://{}/webpages/index.html'.format(self.ip)
         data = {
-            "method": "set"
+            "method": "set",
         }
         response = self.session.post(url, data=encodeData(data), headers=headers)
         response = json5.loads(response.text)
